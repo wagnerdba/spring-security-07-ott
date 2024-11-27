@@ -38,7 +38,7 @@ public class OttDemoApplication {
                             System.out.println(msg);
 
                             response.setContentType(MediaType.TEXT_HTML_VALUE);
-                            response.getWriter().write("you've got console mail");
+                            response.getWriter().write("You've got console mail");
                         }))
                 .build();
     }
@@ -76,7 +76,7 @@ public class OttDemoApplication {
 
         private String generateHtmlPage(String username) {
             return "<!DOCTYPE html>" +
-                    "<html lang=\"en\">" +
+                    "<html lang=\"pt-br\">" +
                     "<head>" +
                     "<meta charset=\"UTF-8\">" +
                     "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" +
@@ -111,7 +111,7 @@ public class OttDemoApplication {
                     "}" +
                     ".footer {" +
                     "  margin-top: 20px;" +
-                    "  font-size: 0.9em;" +
+                    "  font-size: 0.6em;" +
                     "  color: #aaa;" +
                     "}" +
                     "</style>" +
@@ -119,9 +119,9 @@ public class OttDemoApplication {
                     "<body>" +
                     "<div class=\"container\">" +
                     "<h1>Bem-vindo, " + username + "!</h1>" +
-                    "<p>Você está autenticado com sucesso no sistema.</p>" +
+                    "<p>Você está autenticado com sucesso no sistema.</p><br>" +
                     "<div class=\"footer\">" +
-                    "<p>WR Tecnologia - Demonstração de Login com Token</p>" +
+                    "<p>WR Tecnologia em Sistemas - Demonstração de Login com Token</p>" +
                     "</div>" +
                     "</div>" +
                     "</body>" +
