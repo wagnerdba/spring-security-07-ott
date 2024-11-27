@@ -51,13 +51,13 @@ public class OttDemoApplication {
     @Bean
     InMemoryUserDetailsManager inMemoryUserDetailsManager() {
         UserDetails user1 = User.builder()
-                .username("user1")
+                .username("wagnerpires")
                 .password(passwordEncoder().encode("123456"))
                 .roles("USER")
                 .build();
 
         UserDetails user2 = User.builder()
-                .username("user2")
+                .username("miramarpires")
                 .password(passwordEncoder().encode("123456"))
                 .roles("USER")
                 .build();
@@ -118,8 +118,8 @@ public class OttDemoApplication {
                     "</head>" +
                     "<body>" +
                     "<div class=\"container\">" +
-                    "<h1>Bem-vindo, " + username + "!</h1>" +
-                    "<p>Você está autenticado com sucesso no sistema.</p><br>" +
+                    "<h1>BEM-VINDO, " + username + "!</h1>" +
+                    "<p>Rota privada, acesso autorizado.</p><br>" +
                     "<div class=\"footer\">" +
                     "<p>WR Tecnologia em Sistemas - Demonstração de Login com Token</p>" +
                     "</div>" +
