@@ -1,4 +1,4 @@
-# OTT Application (One Time Token Login)
+# OTT (One Time Token Login) Spring Security
 
 Este é um projeto Spring Boot que demonstra o uso de autenticação e login baseado em token único (One-Time Token - OTT).
 A aplicação inclui funcionalidades básicas de autenticação e um endpoint seguro. Utiliza **InMemoryUserDetailsManager**
